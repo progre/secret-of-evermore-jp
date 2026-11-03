@@ -1,0 +1,17 @@
+{
+  "fmt": {
+    "proseWrap": "preserve"
+  },
+  "imports": {
+    "@features/dialog": "../../features/dialog/mod.ts",
+    "@features/encoding": "../../features/encoding/mod.ts",
+    "@features/fixed": "../../features/fixed/mod.ts",
+    "@features/font": "../../features/font/mod.ts",
+    "@core": "../../core/mod.ts",
+    "@deno/graph": "jsr:@deno/graph@^0.111.0",
+    "@iarna/toml": "npm:@iarna/toml@^2.2.5",
+    "@std/assert": "jsr:@std/assert@^1",
+    "@std/fs": "jsr:@std/fs@^1",
+    "@std/path": "jsr:@std/path@^1"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "fmt": {
+    "include": ["packages/"],
+    "lineWidth": 100,
+    "proseWrap": "preserve"
+  },
+  "lint": {
+    "include": ["packages/"]
+  },
+  "tasks": {
+    "build": "deno run --allow-read=build,data,packages/app/patch,\"Secret of Evermore (USA).sfc\",vendor --allow-write=build --allow-run=vendor/xkas-plus/xkas,vendor/xkas-plus/xkas.exe packages/app/main.ts",
+    "check": "deno run --allow-read=build,data,deno.json,packages,\"Secret of Evermore (USA).sfc\",vendor --allow-write=build packages/utils/check/main.ts"  },
+  "workspace": [
+    "./packages/app",
+    "./packages/core",
+    "./packages/features/*",
+    "./packages/utils/*"
+  ]
+}

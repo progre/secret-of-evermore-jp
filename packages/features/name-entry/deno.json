@@ -1,0 +1,8 @@
+{
+  "fmt": {
+    "proseWrap": "preserve"
+  },
+  "imports": {
+    "@core": "../../core/mod.ts"
+  }
+}

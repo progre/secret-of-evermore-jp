@@ -1,0 +1,13 @@
+{
+  "fmt": {
+    "proseWrap": "preserve"
+  },
+  "imports": {
+    "@features/dialog": "../features/dialog/mod.ts",
+    "@features/encoding": "../features/encoding/mod.ts",
+    "@features/fixed": "../features/fixed/mod.ts",
+    "@features/font": "../features/font/mod.ts",
+    "@features/name-entry": "../features/name-entry/mod.ts",
+    "@features/rom": "../features/rom/mod.ts"
+  }
+}

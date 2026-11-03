@@ -1,0 +1,6 @@
+/build/
+/vendor/*
+!/vendor/xkas-plus/
+/vendor/xkas-plus/xkas
+
+*.sfc

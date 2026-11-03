@@ -1,0 +1,9 @@
+{
+  "fmt": {
+    "proseWrap": "preserve"
+  },
+  "imports": {
+    "@core": "../../core/mod.ts",
+    "@std/assert": "jsr:@std/assert@^1"
+  }
+}
