@@ -9,7 +9,11 @@
   },
   "tasks": {
     "build": "deno run --allow-read=build,data,packages/app/patch,\"Secret of Evermore (USA).sfc\",vendor --allow-write=build --allow-run=vendor/xkas-plus/xkas,vendor/xkas-plus/xkas.exe packages/app/main.ts",
-    "check": "deno run --allow-read=build,data,deno.json,packages,\"Secret of Evermore (USA).sfc\",vendor --allow-write=build packages/utils/check/main.ts"  },
+    "check": "deno run --allow-read=build,data,deno.json,packages,\"Secret of Evermore (USA).sfc\",vendor --allow-write=build packages/utils/check/main.ts",
+    "check-patch": "deno run --allow-read=build/soe-ja.bps,build/soe-ja.sfc,\"Secret of Evermore (USA).sfc\" packages/utils/patch-check/main.ts",
+    "patch": "cd build && deno run --allow-env --allow-read=soe-ja.sfc,\"../Secret of Evermore (USA).sfc\" --allow-write=. npm:rom-patcher@3.1.0-b create \"../Secret of Evermore (USA).sfc\" soe-ja.sfc -f bps",
+    "verify-patch": "cd build && deno run --no-lock --allow-env --allow-read=.,\"../Secret of Evermore (USA).sfc\" --allow-write=. npm:rom-patcher@3.1.0-b patch \"../Secret of Evermore (USA).sfc\" soe-ja.bps && cmp \"Secret of Evermore (USA) (patched).sfc\" soe-ja.sfc && rm \"Secret of Evermore (USA) (patched).sfc\""
+  },
   "workspace": [
     "./packages/app",
     "./packages/core",
